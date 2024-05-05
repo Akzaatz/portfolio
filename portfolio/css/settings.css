@@ -1,0 +1,30 @@
+.button-competences {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#bottone1 {
+  margin-top: 20px;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  border-radius: 9px;
+  background: #007594;
+  border: none;
+  font-family: inherit;
+  text-align: center;
+  cursor: none;
+  transition: 0.4s;
+}
+
+#bottone1:hover {
+  box-shadow: 7px 5px 56px -14px indigo;
+}
+
+/* #bottone1:active {
+  transform: scale(0.97);
+  box-shadow: 7px 5px 56px -10px blue;
+} */
