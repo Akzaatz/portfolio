@@ -28,3 +28,7 @@
   transform: scale(0.97);
   box-shadow: 7px 5px 56px -10px blue;
 } */
+
+#argentbank {
+  display: revert;
+}
