@@ -4,7 +4,7 @@
   align-items: center;
 }
 
-#bottone1 {
+.bottone1 {
   margin-top: 20px;
   color: white;
   padding-left: 10px;
@@ -20,10 +20,23 @@
   transition: 0.4s;
 }
 
-#bottone1:hover {
+.bottone1:hover {
   box-shadow: 7px 5px 56px -14px indigo;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.poly {
+  padding-left: 0;
+}
 /* #bottone1:active {
   transform: scale(0.97);
   box-shadow: 7px 5px 56px -10px blue;

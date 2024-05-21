@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
+    <meta name="description" content="PortFolio de Akzaats Web-développeur indépendant">
     <meta name="author" content="">
     <title>PortFolio Akzaats</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
@@ -23,7 +23,8 @@
         <div class="container"><a class="navbar-brand js-scroll-trigger" href="#page-top">Akzaats</a>
             <button class="navbar-toggler navbar-toggler-right font-weight-bold bg-primary text-white rounded"
                 type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
-                aria-expanded="false" aria-label="Toggle navigation">Menu <i class="fas fa-bars"></i></button>
+                aria-expanded="false" aria-label="Toggle navigation"><span class="sr-only">menu</span> <i
+                    class="fas fa-bars"></i></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
@@ -32,7 +33,9 @@
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
                             href="#about">Compétences</a>
                     </li>
-
+                    <!-- <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                            href="#contact">ddd</a>
+                    </li> -->
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
                             href="#contact">Langages</a>
                     </li>
@@ -43,11 +46,14 @@
     <header class="masthead bg-primary text-white text-center">
         <div class="container d-flex align-items-center flex-column">
 
-
+            <!-- Masthead Avatar Image<img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="">
+                Masthead Heading -->
 
             <h1 class="masthead-heading mb-0">Développeur Web</h1>
             <!-- Icon Divider-->
-            <div class="divider-custom divider-light">
+
+
+            <div class="divider-custom divider-light" aria-hidden="true">
                 <div class="divider-custom-line"></div>
                 <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                 <div class="divider-custom-line"></div>
@@ -56,7 +62,7 @@
             <p class="pre-wrap masthead-subheading font-weight-light mb-0">Polyvalent
             </p>
 
-            <ul>
+            <ul class="poly">
                 <li>Maîtrise les principaux langages de Développement Web
                 </li>
                 <li>Maîtrise les outils informatiques et la communication digitale</li>
@@ -66,6 +72,7 @@
         </div>
     </header>
     <section class="page-section portfolio" id="portfolio">
+
         <div class="container">
             <!-- Portfolio Section Heading-->
             <div class="text-center">
@@ -142,34 +149,55 @@
         </div>
     </section>
     <!-- Portfolio Modal-->
-    <div class="portfolio-modal modal fade" id="portfolioModal0" tabindex="-1" role="dialog"
-        aria-labelledby="#portfolioModal0Label" aria-hidden="true">
+
+
+    <!-- <div class="portfolio-modal modal fade" id="portfolioModal0" tabindex="-1" role="dialog"
+        aria-labelledby="portfolioModal0Label" aria-hidden="true">
         <div class="modal-dialog modal-xl" role="document">
             <div class="modal-content">
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i
-                            class="fas fa-times"></i></span></button>
-                <div class="modal-body text-center">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary mb-0">Argent-Bank</h2>
-                                <!-- Icon Divider-->
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
-                                <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5"
-                                    src="assets/img/portfolio/argentbank.webp" alt="miniature Argent Bank" />
+                <div class="modal-header">
+                    <h5 class="modal-title" id="portfolioModal0Label">Modal Title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button> -->
 
-                                <div id="argentbank">
-                                    <a id="revert" class=" light btn-social mx-1"
-                                        href="https://akzaatz.github.io/Argent-Bank/">Argent-Bank</a>
-                                </div>
 
-                                <button class="btn btn-primary" href="#" data-dismiss="modal"><i
-                                        class="fas fa-times fa-fw"></i>Close Window</button>
+    <div class="portfolio-modal modal fade" id="portfolioModal0" tabindex="-1" role="dialog"
+        aria-labelledby="portfolioModal0Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true"><i class="fas fa-times"></i></span></button>
+
+
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h5 class="portfolio-modal-title text-secondary mb-0" id="portfolioModal0Label">
+                                        Argent-Bank</h5>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5"
+                                        src="assets/img/portfolio/argentbank.webp" alt="miniature Argent Bank" />
+
+                                    <div id="argentbank">
+                                        <a class=" light btn-social mx-1"
+                                            href="https://akzaatz.github.io/Argent-Bank/">Argent-Bank</a>
+                                    </div>
+
+                                    <button class="btn btn-primary" data-dismiss="modal"><i
+                                            class="fas fa-times fa-fw"></i>Close Window</button>
+
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -178,31 +206,41 @@
         </div>
     </div>
     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog"
-        aria-labelledby="#portfolioModal1Label" aria-hidden="true">
+        aria-labelledby="portfolioModal1Label" aria-hidden="true">
         <div class="modal-dialog modal-xl" role="document">
-            <div class="modal-content">
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i
-                            class="fas fa-times"></i></span></button>
-                <div class="modal-body text-center">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary mb-0">Booki </h2>
-                                <!-- Icon Divider-->
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
-                                <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5"
-                                    src="assets/img/portfolio/booki.webp" alt="mininiature booki" />
 
-                                <div>
-                                    <a class=" light btn-social mx-1" href="https://akzaatz.github.io/Booki/">Booki</a>
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true"><i class="fas fa-times"></i></span></button>
+
+
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h5 class="portfolio-modal-title text-secondary mb-0" id="portfolioModal1Label">
+                                        Booki</h5>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5"
+                                        src="assets/img/portfolio/booki.webp" alt="miniature Booki" />
+
+                                    <div id="booki">
+                                        <a class=" light btn-social mx-1"
+                                            href="https://akzaatz.github.io/Booki/">Booki</a>
+                                    </div>
+
+                                    <button class="btn btn-primary" data-dismiss="modal"><i
+                                            class="fas fa-times fa-fw"></i>Close Window</button>
+
                                 </div>
-                                <button class="btn btn-primary" href="#" data-dismiss="modal"><i
-                                        class="fas fa-times fa-fw"></i>Close Window</button>
                             </div>
                         </div>
                     </div>
@@ -210,33 +248,43 @@
             </div>
         </div>
     </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog"
-        aria-labelledby="#portfolioModal2Label" aria-hidden="true">
-        <div class="modal-dialog modal-xl" role="document">
-            <div class="modal-content">
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i
-                            class="fas fa-times"></i></span></button>
-                <div class="modal-body text-center">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary mb-0">Kaza</h2>
-                                <!-- Icon Divider-->
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
-                                <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5"
-                                    src="assets/img/portfolio/kaza.webp" alt="Miniature Kaza" />
 
-                                <div>
-                                    <a class=" light btn-social mx-1" href="   https://akzaatz.github.io/Kasa/
-                                    ">Kasa</a>
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog"
+        aria-labelledby="portfolioModal2Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true"><i class="fas fa-times"></i></span></button>
+
+
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h5 class="portfolio-modal-title text-secondary mb-0" id="portfolioModal2Label">
+                                        Kasa</h5>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5"
+                                        src="assets/img/portfolio/kaza.webp" alt="miniature Kasa" />
+
+                                    <div id="kasa">
+                                        <a class=" light btn-social mx-1"
+                                            href="https://akzaatz.github.io/Kasa/">Kasa</a>
+                                    </div>
+
+                                    <button class="btn btn-primary" data-dismiss="modal"><i
+                                            class="fas fa-times fa-fw"></i>Close Window</button>
+
                                 </div>
-                                <button class="btn btn-primary" href="#" data-dismiss="modal"><i
-                                        class="fas fa-times fa-fw"></i>Close Window</button>
                             </div>
                         </div>
                     </div>
@@ -245,32 +293,41 @@
         </div>
     </div>
     <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog"
-        aria-labelledby="#portfolioModal3Label" aria-hidden="true">
+        aria-labelledby="portfolioModal3Label" aria-hidden="true">
         <div class="modal-dialog modal-xl" role="document">
-            <div class="modal-content">
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i
-                            class="fas fa-times"></i></span></button>
-                <div class="modal-body text-center">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary mb-0">OhmyFood</h2>
-                                <!-- Icon Divider-->
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
-                                <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5"
-                                    src="assets/img/portfolio/myfood.webp" alt="Controller" />
 
-                                <div>
-                                    <a class=" light btn-social mx-1" href="https://akzaatz.github.io/ohmyfood/
-                                    ">ohmyFood</a>
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true"><i class="fas fa-times"></i></span></button>
+
+
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h5 class="portfolio-modal-title text-secondary mb-0" id="portfolioModal3Label">
+                                        OhMyFood</h5>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5"
+                                        src="assets/img/portfolio/argentbank.webp" alt="miniature Argent Bank" />
+
+                                    <div id="ohmyfood">
+                                        <a class=" light btn-social mx-1"
+                                            href="https://akzaatz.github.io/Argent-Bank/">OhMyFood</a>
+                                    </div>
+
+                                    <button class="btn btn-primary" data-dismiss="modal"><i
+                                            class="fas fa-times fa-fw"></i>Close Window</button>
+
                                 </div>
-                                <button class="btn btn-primary" href="#" data-dismiss="modal"><i
-                                        class="fas fa-times fa-fw"></i>Close Window</button>
                             </div>
                         </div>
                     </div>
@@ -279,32 +336,41 @@
         </div>
     </div>
     <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog"
-        aria-labelledby="#portfolioModal4Label" aria-hidden="true">
+        aria-labelledby="portfolioModal4Label" aria-hidden="true">
         <div class="modal-dialog modal-xl" role="document">
-            <div class="modal-content">
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i
-                            class="fas fa-times"></i></span></button>
-                <div class="modal-body text-center">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary mb-0">Nina Carducci </h2>
-                                <!-- Icon Divider-->
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
-                                <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5"
-                                    src="assets/img/portfolio/nina.webp" alt="mignature Nina Carducci" />
 
-                                <div>
-                                    <a id="revert" class=" light btn-social mx-1" href="https://akzaatz.github.io/nina-carducci/
-                                    ">Nina Carducci</a>
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true"><i class="fas fa-times"></i></span></button>
+
+
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h5 class="portfolio-modal-title text-secondary mb-0" id="portfolioModal4Label">
+                                        Nina Carducci</h5>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5"
+                                        src="assets/img/portfolio/argentbank.webp" alt="miniature Argent Bank" />
+
+                                    <div id="nina-carducci">
+                                        <a class=" light btn-social mx-1"
+                                            href="https://akzaatz.github.io/Argent-Bank/">Nina Carducci</a>
+                                    </div>
+
+                                    <button class="btn btn-primary" data-dismiss="modal"><i
+                                            class="fas fa-times fa-fw"></i>Close Window</button>
+
                                 </div>
-                                <button class="btn btn-primary" href="#" data-dismiss="modal"><i
-                                        class="fas fa-times fa-fw"></i>Close Window</button>
                             </div>
                         </div>
                     </div>
@@ -313,32 +379,41 @@
         </div>
     </div>
     <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog"
-        aria-labelledby="#portfolioModal5Label" aria-hidden="true">
+        aria-labelledby="portfolioModal5Label" aria-hidden="true">
         <div class="modal-dialog modal-xl" role="document">
-            <div class="modal-content">
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i
-                            class="fas fa-times"></i></span></button>
-                <div class="modal-body text-center">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary mb-0">Sophie Buel</h2>
-                                <!-- Icon Divider-->
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
-                                <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5"
-                                    src="assets/img/portfolio/sophiebuel.webp" alt="mininiature Sophie Buel  " />
 
-                                <div>
-                                    <a class=" light btn-social mx-1"
-                                        href=https://akzaatz.github.io/sophie-Bluel/FrontEnd/index.html>Sophie Bluel</a>
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true"><i class="fas fa-times"></i></span></button>
+
+
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h5 class="portfolio-modal-title text-secondary mb-0" id="portfolioModal5Label">
+                                        Sophie Buel</h5>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5"
+                                        src="assets/img/portfolio/argentbank.webp" alt="miniature Argent Bank" />
+
+                                    <div id="sophie-buel">
+                                        <a id="revert" class=" light btn-social mx-1"
+                                            href="https://akzaatz.github.io/Argent-Bank/">Sophie Buel</a>
+                                    </div>
+
+                                    <button class="btn btn-primary" data-dismiss="modal"><i
+                                            class="fas fa-times fa-fw"></i>Close Window</button>
+
                                 </div>
-                                <button class="btn btn-primary" href="#" data-dismiss="modal"><i
-                                        class="fas fa-times fa-fw"></i>Close Window</button>
                             </div>
                         </div>
                     </div>
@@ -346,6 +421,7 @@
             </div>
         </div>
     </div>
+
 
     <section class="page-section bg-primary text-white mb-0" id="about">
         <div class="container">
@@ -364,13 +440,13 @@
                 <div class="col-lg-4 ml-auto">
                     <div class="button-competences">
                         <div>
-                            <button id="bottone1"><strong>Développement Commercial</strong></button>
+                            <button class="bottone1"><strong>Développement Commercial</strong></button>
                         </div>
                         <div>
-                            <button id="bottone1"><strong>Développement Web</strong></button>
+                            <button class="bottone1"><strong>Développement Web</strong></button>
                         </div>
                         <div>
-                            <button id="bottone1"><strong>Coaching</strong></button>
+                            <button class="bottone1"><strong>Coaching</strong></button>
                         </div>
                     </div>
 
@@ -378,13 +454,13 @@
                 <div class="col-lg-4 mr-auto">
                     <div class="button-competences">
                         <div>
-                            <button id="bottone1"><strong>Communication Digitale</strong></button>
+                            <button class="bottone1"><strong>Communication Digitale</strong></button>
                         </div>
                         <div>
-                            <button id="bottone1"><strong>Gestion de projets</strong></button>
+                            <button class="bottone1"><strong>Gestion de projets</strong></button>
                         </div>
                         <div>
-                            <button id="bottone1"><strong>Événementiel</strong></button>
+                            <button class="bottone1"><strong>Événementiel</strong></button>
                         </div>
                     </div>
 
@@ -434,17 +510,19 @@
                     <div class="d-flex flex-column align-items-center">
                         <div class="icon-contact mb-3"><i class="fa-brands fa-react"></i></div>
 
-
+                        <!-- <div class="lead font-weight-bold">REACT</div> -->
                     </div>
                 </div>
 
 
             </div>
+        </div>
     </section>
     <footer class="footer text-center">
         <div class="container">
             <div class="row">
 
+                <!-- Footer Social Icons-->
                 <div class="col-lg-4 mb-5 mb-lg-0">
                     <h4 class="mb-4">CONTACT</h4>
 
@@ -452,14 +530,14 @@
 
 
                     <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/Akzaatz"><i
-                            class="fa-brands fa-github"></i></a>
+                            class="fa-brands fa-github"></i> <span class="sr-only">GitHub</span></a>
 
                     <a class="btn btn-outline-light btn-social mx-1" href="mailto:akzaats@protonmail.com"><i
-                            class="far fa-envelope"></i></a>
+                            class="far fa-envelope"></i><span class="sr-only">Mail</span></a>
                 </div>
-
+                <!-- Footer About Text-->
                 <div class="col-lg-4">
-
+                    <!-- <h4 class="mb-4">SOFT SKILLS</h4> -->
                     <ul class="pre-wrap lead mb-0">
 
                     </ul>
@@ -469,18 +547,16 @@
         </div>
     </footer>
 
-    <div class="scroll-to-top d-lg-none position-fixed"><a
-            class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i
-                class="fa fa-chevron-up"></i></a></div>
 
+    <!-- Bootstrap core JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-
+    <!-- Third party plugin JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-
+    <!-- Contact form JS-->
     <script src="assets/mail/jqBootstrapValidation.js"></script>
     <script src="assets/mail/contact_me.js"></script>
-
+    <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
 </body>
 
