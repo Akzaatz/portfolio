@@ -1,11 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // Fonction pour créer et animer une bulle
   function createBubble() {
     const bubbleZone = document.querySelector(".bubble-zone");
-    if (!bubbleZone) return;
+    if (!bubbleZone) return; // Vérifier si .bubble-zone existe
 
     const bubble = document.createElement("span");
     bubble.classList.add("bubble");
-    bubbleZone.appendChild(bubble);
+    bubbleZone.appendChild(bubble); // Ajouter à .bubble-zone
 
     const size = Math.random() * 60 + 40 + "px";
     bubble.style.width = size;
@@ -22,11 +23,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const icon = document.createElement("i");
     icon.className = iconClass;
 
-    const iconSize = parseFloat(size) * 0.6 + "px";
+    const iconSize = parseFloat(size) * 0.6 + "px"; // 60% de la taille de la bulle
     icon.style.fontSize = iconSize;
     bubble.appendChild(icon);
 
-    // Position initiale aléatoire à l'intérieur de bubbleZone
     const bubbleZoneRect = bubbleZone.getBoundingClientRect();
     const bubbleLeft =
       Math.random() * (bubbleZoneRect.width - parseFloat(size));
@@ -36,6 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
     bubble.style.left = bubbleLeft + "px";
     bubble.style.top = bubbleTop + "px";
 
+    // Vérification de la position de la bulle par rapport à bubbleZone
     function checkBubblePosition() {
       const bubbleRect = bubble.getBoundingClientRect();
       if (
@@ -51,10 +52,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     checkBubblePosition();
+
     window.addEventListener("scroll", checkBubblePosition);
 
-    let velocityX = (Math.random() - 0.5) * 2; // Adjust the speed as needed
-    let velocityY = (Math.random() - 0.5) * 2; // Adjust the speed as needed
+    let velocityX = (Math.random() - 0.5) * 2;
+    let velocityY = (Math.random() - 0.5) * 2;
 
     function moveBubble() {
       let currentTop = parseFloat(bubble.style.top);
@@ -72,23 +74,52 @@ document.addEventListener("DOMContentLoaded", () => {
 
     moveBubble();
 
+    // Ajouter l'écouteur d'événements à la bulle créée
     bubble.addEventListener("click", () => {
       const staticZone = document.querySelector(".static-zone");
       if (staticZone) {
         const banner = document.createElement("span");
         banner.classList.add("banner");
-        banner.textContent = "SERIAL CODEUR";
-        staticZone.appendChild(banner);
-        staticZone.style.opacity = 1;
 
+        const slogans = [
+          "SERIAL CODEUR",
+          "GREEN CODEUR",
+          "FRIENDLY CODEUR",
+          "SERIOUS CODEUR",
+        ];
+        const randomSlogan =
+          slogans[Math.floor(Math.random() * slogans.length)];
+        banner.textContent = randomSlogan; // Ajouter du texte aléatoire à banner
+
+        // Définir la couleur de fond en fonction du slogan
+        switch (randomSlogan) {
+          case "SERIAL CODEUR":
+            banner.style.backgroundColor = "red";
+            break;
+          case "GREEN CODEUR":
+            banner.style.backgroundColor = "green";
+            break;
+          case "FRIENDLY CODEUR":
+            banner.style.backgroundColor = "blue";
+            break;
+          case "SERIOUS CODEUR":
+            banner.style.backgroundColor = "beige";
+            break;
+        }
+
+        staticZone.appendChild(banner); // Ajouter à .static-zone
+        staticZone.style.opacity = 1; // Réinitialiser l'opacité après l'ajout de la bannière
+
+        // Supprimer la bannière après un délai (par exemple, 2 secondes)
         setTimeout(() => {
           banner.remove();
-          staticZone.style.opacity = 1;
-        }, 900);
+          staticZone.style.opacity = 1; // Rétablir l'opacité de staticZone
+        }, 2000); // Durée de l'animation en millisecondes
       }
     });
   }
 
+  // Appeler la fonction createBubble pour créer une bulle lorsque nécessaire
   const staticIcones = document.querySelectorAll(".static-icones");
   staticIcones.forEach((icon) => {
     icon.addEventListener("click", () => {
@@ -99,9 +130,10 @@ document.addEventListener("DOMContentLoaded", () => {
       if (staticZone) {
         staticZone.style.opacity = 0.5;
 
+        // Rétablir l'opacité de staticZone après 2 secondes
         setTimeout(() => {
           staticZone.style.opacity = 1;
-        }, 2000);
+        }, 2000); // Durée de l'animation en millisecondes
       }
     });
   });
